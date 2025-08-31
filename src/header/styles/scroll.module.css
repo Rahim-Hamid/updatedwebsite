@@ -1,0 +1,28 @@
+.scrollcontainer {
+    display: flex; 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  white-space: nowrap; 
+  background-color: #FF0004;
+  height: 60px;
+}
+
+.scrolltext {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  animation: scroll-left-to-right linear infinite; 
+  animation-duration: 8s; 
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes scroll-left-to-right {
+  from {
+    transform: translateX(-100%); 
+  }
+  to {
+    transform: translateX(100%); 
+  }
+}
